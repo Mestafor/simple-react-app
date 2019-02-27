@@ -47,7 +47,7 @@ class App extends Component {
 
   removeUser = (obj) => {
     this.setState({
-      users: this.state.users.filter(user => user.firstName !== obj.firstName && user.lastName !== obj.lastName)
+      users: this.state.users.filter(user => !(user.firstName === obj.firstName && user.lastName === obj.lastName))
     });
   }
 

@@ -24,6 +24,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "standart": "6.1.0"
+    "standard": "12.0.1"
   }
 }

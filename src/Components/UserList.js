@@ -25,11 +25,11 @@ class UserList extends Component {
     </table>;
   }
 
-  renderTr = (data) => {
-    return <tr key={JSON.stringify(data)}>
-      <td>{data.lastName}, {data.firstName}</td>
-      <td>{data.score}</td>
-      <td><button onClick={this.onDelete(data)}>Delete</button></td>
+  renderTr = (user) => {
+    return <tr key={JSON.stringify(user)}>
+      <td>{user.lastName}, {user.firstName}</td>
+      <td>{user.score}</td>
+      <td><button onClick={this.onDelete(user)}>Delete</button></td>
     </tr>;
   }
 
