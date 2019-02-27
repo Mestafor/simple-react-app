@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class UserList extends Component {
+
+  static propTypes = {
+    users: PropTypes.array.isRequired,
+    removeUser: PropTypes.func.isRequired
+  };
 
   onDelete = (data) => (e) => {
     this.props.removeUser(data);

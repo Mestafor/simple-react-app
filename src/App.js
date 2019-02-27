@@ -30,13 +30,13 @@ class App extends Component {
     let hasUser = false;
 
     this.state.users.forEach(user => {
-      if(user.firstName === obj.firstName && user.lastName === obj.lastName) {
+      if (user.firstName === obj.firstName && user.lastName === obj.lastName) {
         hasUser = true;
         user.score = obj.score;
       }
     });
 
-    if(!hasUser) {
+    if (!hasUser) {
       this.state.users.push(obj);
     }
 
