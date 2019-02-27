@@ -12,3 +12,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Table */
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+  background-color: #f6f8fa;
+}
+
+th,
+td {
+  text-align: left;
+  border: 1px solid;
+  padding: 5px 10px;
+}
+
+/* Form */
+fieldset {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+input {
+  border-radius: 4px;
+  padding: 5px 10px;
+  box-shadow: none;
+  border: 1px solid;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Layout */
+.main {
+  max-width: 768px;
+  margin: 0 auto;
+}
