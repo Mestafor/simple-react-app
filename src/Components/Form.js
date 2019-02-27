@@ -53,7 +53,7 @@ class Form extends Component {
         <input type="number" min="0" max="100" name="score" placeholder="Score" defaultValue={0} />
       </fieldset>
       <fieldset>
-        <input type="submit" value="Add User" />
+        <input type="submit" value="Add/Update User" />
       </fieldset>
     </form>
   }
